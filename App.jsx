@@ -1,6 +1,7 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import React, {useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
+import AppNavigation from './navigation/AppNavigation';
 
 const App = () => {
   useEffect(() => {
@@ -8,9 +9,9 @@ const App = () => {
   }, []);
 
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    // <SafeAreaView>
+    <AppNavigation />
+    //  </SafeAreaView>
   );
 };
 
